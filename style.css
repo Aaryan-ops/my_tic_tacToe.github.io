@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(188, 192, 177);
+}
+
+.levels {
+  bottom: 0;
+  height: 50rem;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+iframe {
+  width: 500px;
+  height: 600px;
+}
+
+#hard {
+  border: 3px solid #888;
+  margin: 2px;
+  text-align: center;
+}
+
+#medium {
+  align-items: center;
+  text-align: center;
+  border: 3px solid #777;
+  margin: 2px;
+}
+#easy {
+  text-align: center;
+  border: 3px solid #555;
+}
+nav {
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+#easyCode:hover,#easyPage:hover,
+#dcat:hover,
+#ref:hover {
+  color: rgb(11, 7, 253);
+}
+#tic {
+  font-weight: 900;
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+  left: 820px;
+  position: absolute;
+  top: 80px;
+  color: brown;
+}
