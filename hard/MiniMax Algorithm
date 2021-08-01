@@ -1,0 +1,11 @@
+Credit: https://www.freecodecamp.org/news/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37/.
+
+
+This algorithm thinks for the ai before each move and istriggerd right after the human player has made a move.
+The board array and a player character are inputs. I extract a subarray from within the baord which represents the array of all empty elements left after the human player's current move. For each empty space left, I imagine what move would be the best to take as ai by giving score to each move. For each empty space, I check recurvely for the next set of empty spaces and mimic the play of both human and ai players, and score both of them. The cases where the human wins are given minimum score value and the cases where the ai wins is given the highest score which is what every move is driven to achieve. It is simply thinking like 'if I make this move here, what all spots are left for me and the human, and what would the human player play next? This is done recrsively until all the spots are filled, in theory. 
+
+The algorithm tries to give the ai the highest score and the human player the lowest score, per move it makes.
+
+The moves array contains move objects having all the indicies of empty spots and their associated score values. The best score is determined in either case of human or ai playing. The bestMove is the index of the empty space that is decided by this algorithm, and is used to select the move object from the moves array. 
+
+It's index is then used in the return value of aiSpots() routine which actually calls this algorithm.
